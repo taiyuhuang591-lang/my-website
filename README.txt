@@ -1,19 +1,26 @@
-# 黃泰喻｜個人履歷網頁
+# 黃泰喻｜個人履歷與作品集網站 (CyberSec & Tech Edition)
 
-## 檔案
-- `index.html`：履歷內容與網頁結構
-- `style.css`：版面、配色、響應式樣式
+## 檔案說明
+- `index.html`：個人履歷結構、賽博龐克風格版面、專案經歷與核心能力
+- `style.css`：暗黑科技風、霓虹發光漸層、3D 傾斜卡片、HUD 與響應式排版
+- `script.js`：互動式駭客終端機 (Interactive Terminal)、神經網絡粒子與 Matrix 綠色代碼雨 Canvas 動畫、Web Audio 科幻音效、打字機動效、色彩主題切換
+
+## 備份檔案
+- `index.html.bak`：修改前的原始備份
+- `style.css.bak`：修改前的原始備份
 
 ## 本機預覽
-直接用瀏覽器開啟 `index.html`。
+直接以瀏覽器開啟 `index.html`，或在該目錄下執行：
+```bash
+python3 -m http.server 8080
+```
+然後在瀏覽器開啟 `http://192.168.2.151:8080` 或本機 `http://localhost:8080` 預覽。
 
-## 上架 GitHub Pages
-1. 建立一個 Public GitHub Repository。
-2. 將 `index.html`、`style.css` 上傳至 Repository 根目錄。
-3. 開啟 Settings → Pages。
-4. 在 Build and deployment 選擇 Deploy from a branch。
-5. Branch 選 `main`，資料夾選 `/ (root)`，按 Save。
-
-## 上架前請修改
-在 `index.html` 搜尋「請填入你的 Email」及「請填入你的電話」，換成你願意公開的聯絡方式。
-若 GitHub 使用者名稱不是 `taiyuhuang591`，請同步修改頁面中的 GitHub 連結。
+## 部署至 GitHub Pages
+1. 將更新後的 `index.html`、`style.css`、`script.js` 提交並推播至 GitHub Repository：
+   ```bash
+   git add index.html style.css script.js README.txt
+   git commit -m "feat: upgrade portfolio with cybersec terminal, matrix rain, and interactive canvas"
+   git push origin main
+   ```
+2. 在 GitHub 倉儲的 Settings → Pages，確認 Branch 為 `main` / `root`。
