@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="黃泰喻 (Terry Huang) 的個人技術履歷與作品集 — 專注於資訊安全、後端架構、Linux 系統管理與容器化應用。">
-  <title>黃泰喻 | Terry Huang — CyberSec & Backend Engineer</title>
+  <meta name="description" content="黃泰喻 (Terry Huang) 的個人技術履歷與作品集 — 專注於資訊安全防禦、後端 API 開發、Linux 系統維運與 Docker 容器化應用。國立臺中科技大學資訊工程系畢業。">
+  <title>黃泰喻 | Terry Huang — 資安工程師 · 後端工程師 · MIS 工程師</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +24,8 @@
   <header class="hud-bar">
     <div class="hud-left">
       <span class="hud-status-dot"></span>
-      <span class="hud-badge"><span class="terminal-prefix">SYS_STATUS:</span> ONLINE</span>
-      <span class="hud-badge desktop-only"><span class="terminal-prefix">DEFENSE:</span> ACTIVE [BLUE TEAM]</span>
+      <span class="hud-badge"><span class="terminal-prefix">PORTFOLIO:</span> ONLINE <span class="badge-sub">(導覽模擬)</span></span>
+      <span class="hud-badge desktop-only"><span class="terminal-prefix">ROLE:</span> DEFENSIVE [BLUE TEAM]</span>
       <span class="hud-badge desktop-only"><span class="terminal-prefix">LOC:</span> TAICHUNG, TW</span>
     </div>
 
@@ -38,13 +38,8 @@
       </div>
 
       <!-- Matrix Rain Toggle -->
-      <button id="matrix-toggle" class="hud-action-btn" title="切換駭客任務 Matrix 代碼雨">
+      <button id="matrix-toggle" class="hud-action-btn" title="切換駭客任務 Matrix 代碼雨 (純視覺效果)">
         <span class="btn-icon">⚡</span> MATRIX
-      </button>
-
-      <!-- Audio SFX Toggle -->
-      <button id="sfx-toggle" class="hud-action-btn" title="切換介面科幻音效">
-        <span id="sfx-icon">🔇</span> SFX
       </button>
 
       <!-- Time Display -->
@@ -69,12 +64,6 @@
         </div>
 
         <div class="id-details">
-          <div class="badge-row">
-            <span class="cyber-tag highlight">資安工程師</span>
-            <span class="cyber-tag">後端架構</span>
-            <span class="cyber-tag">MIS 維運</span>
-          </div>
-
           <h1 class="glitch-name" data-text="黃泰喻">
             黃泰喻 <span class="en-name">/ Terry Huang</span>
           </h1>
@@ -86,22 +75,25 @@
           </div>
 
           <p class="bio-desc">
-            國立臺中科技大學 資訊工程系畢業。以系統深層理解為基礎，專注於 <strong>資訊安全防禦、Linux 系統加固、FastAPI 後端 API 開發</strong> 與 <strong>Docker 容器化部署</strong>。擅長先以日誌與環境排查縮小範圍，落實為可重複驗證的穩健架構。
+            我是黃泰喻，畢業於國立臺中科技大學資訊工程系。在學期間，我接觸了 Python、Linux、Docker 等技術，也參與過 ARKAI 照護系統及 Metis 紅藍隊攻防演練，從專案中累積系統開發、環境建置與資安實作的經驗。
           </p>
 
           <div class="quick-contacts">
-            <a href="https://github.com/taiyuhuang591" target="_blank" rel="noopener noreferrer" class="cyber-btn primary">
-              <span class="btn-glitch"></span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub ↗
+            <a href="#projects" class="cyber-btn primary">
+              <span>🚀 查看專案</span>
             </a>
 
-            <button id="copy-email-btn" class="cyber-btn secondary" data-email="taiyuhuang591@gmail.com">
+            <a href="https://github.com/taiyuhuang591-lang" target="_blank" rel="noopener noreferrer" class="cyber-btn secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub ↗</span>
+            </a>
+
+            <button id="copy-email-btn" class="cyber-btn secondary" data-email="taiyuhuang591@gmail.com" type="button">
               <span>📧 複製 Email</span>
             </button>
 
-            <a href="#projects" class="cyber-btn outline">
-              <span>🚀 檢視作品集</span>
+            <a href="#contact" class="cyber-btn outline">
+              <span>📬 聯絡我</span>
             </a>
           </div>
         </div>
@@ -115,58 +107,36 @@
             <span class="dot yellow"></span>
             <span class="dot green"></span>
           </div>
-          <div class="terminal-title">terry@cyber-sec-node: ~ (zsh)</div>
-          <div class="terminal-badge">LIVE INTERACTIVE</div>
+          <div class="terminal-title">terry@cyber-sec-node: ~ (履歷導覽模擬終端機)</div>
+          <div class="terminal-badge">導覽模擬</div>
         </div>
 
-        <div class="terminal-body" id="terminal-output">
-          <div class="term-line welcome-line"><span class="highlight-cyan">[TERRY-OS v3.8.4]</span> Security & Automation Daemon Loaded.</div>
-          <div class="term-line"><span class="prompt-text">terry@sec:~$</span> <span class="term-dim">systemctl status defense.service</span></div>
-          <div class="term-line success-text">● defense.service - Blue Team Active Perimeter Defense</div>
-          <div class="term-line">&nbsp;&nbsp;Active: <span class="status-active">active (running)</span> since boot</div>
-          <div class="term-line">&nbsp;&nbsp;Tasks: 42 (limit: 4915) | Memory: 128.4M | Shield: OK</div>
-          <div class="term-line term-tip"><span class="highlight-yellow">💡 提示:</span> 點擊下方快速按鈕或在下方輸入指令體驗互動終端：</div>
+        <div class="terminal-body" id="terminal-output" role="log" aria-live="polite">
+          <div class="term-line welcome-line"><span class="highlight-cyan">[TERRY-OS v3.8.4]</span> 履歷導覽模擬環境已就緒 (Resume Interactive Shell)</div>
+          <div class="term-line"><span class="prompt-text">terry@sec:~$</span> <span class="term-dim">systemctl status resume-guide.service</span></div>
+          <div class="term-line success-text">● resume-guide.service - 履歷導覽模擬背景服務 (Simulation Mode)</div>
+          <div class="term-line">&nbsp;&nbsp;狀態: <span class="status-active">active (導覽就緒)</span> | 模式: 靜態前端模擬 (非真實伺服器)</div>
+          <div class="term-line">&nbsp;&nbsp;核心: 黃泰喻個人技術歷程展示 ｜ 包含 ARKAI 與 Metis 實務經驗</div>
+          <div class="term-line term-tip"><span class="highlight-yellow">💡 提示:</span> 點擊下方快速按鈕或在下方輸入指令體驗互動導覽（輸入 <span class="highlight-cyan">help</span> 查看指令清單）：</div>
         </div>
 
         <!-- Terminal Quick Action Chips -->
-        <div class="terminal-presets">
-          <button class="preset-chip" data-cmd="whoami">whoami</button>
-          <button class="preset-chip" data-cmd="cat projects">cat projects</button>
-          <button class="preset-chip" data-cmd="skills">skills</button>
-          <button class="preset-chip" data-cmd="sudo hire terry">sudo hire terry</button>
-          <button class="preset-chip" data-cmd="clear">clear</button>
+        <div class="terminal-presets" aria-label="常用終端機指令按鈕">
+          <button class="preset-chip" data-cmd="help" type="button">help</button>
+          <button class="preset-chip" data-cmd="whoami" type="button">whoami</button>
+          <button class="preset-chip" data-cmd="skills" type="button">skills</button>
+          <button class="preset-chip" data-cmd="projects" type="button">projects</button>
+          <button class="preset-chip" data-cmd="contact" type="button">contact</button>
+          <button class="preset-chip" data-cmd="sudo hire terry" type="button">sudo hire terry</button>
+          <button class="preset-chip" data-cmd="clear" type="button">clear</button>
         </div>
 
         <!-- Terminal Interactive Input -->
         <form id="terminal-form" class="terminal-input-row" autocomplete="off">
-          <span class="terminal-prompt-user">terry@sec:~$</span>
-          <input type="text" id="terminal-input" placeholder="輸入指令 (例: help, projects, skills...)" spellcheck="false">
+          <label for="terminal-input" class="terminal-prompt-user">terry@sec:~$</label>
+          <input type="text" id="terminal-input" placeholder="輸入指令 (例: help, whoami, skills, projects...)" spellcheck="false">
           <button type="submit" class="terminal-send-btn" aria-label="執行指令">↵</button>
         </form>
-      </div>
-    </section>
-
-    <!-- Key Metrics Ribbon -->
-    <section class="metrics-grid">
-      <div class="metric-box glass-panel">
-        <div class="metric-num" data-val="100">0%</div>
-        <div class="metric-label">驗證與復原導向</div>
-        <div class="metric-sub">先查 Log 鎖定根因，再行防護與修復</div>
-      </div>
-      <div class="metric-box glass-panel">
-        <div class="metric-num">0 <span class="metric-unit">LEAK</span></div>
-        <div class="metric-label">機敏資料零暴露</div>
-        <div class="metric-sub">落實去識別化與金鑰權限最小化</div>
-      </div>
-      <div class="metric-box glass-panel">
-        <div class="metric-num">Blue <span class="metric-unit">TEAM</span></div>
-        <div class="metric-label">藍隊實戰攻防經驗</div>
-        <div class="metric-sub">校務門戶演練 · 弱點修補 · 阻擋機制</div>
-      </div>
-      <div class="metric-box glass-panel">
-        <div class="metric-num">Linux <span class="metric-unit">CORE</span></div>
-        <div class="metric-label">系統維運與容器部署</div>
-        <div class="metric-sub">FastAPI + Docker + PostgreSQL 實戰</div>
       </div>
     </section>
 
@@ -183,47 +153,97 @@
         <article class="project-card glass-panel tilt-card">
           <div class="card-glow"></div>
           <div class="project-header">
-            <span class="project-category">AI × 資安 × 智慧醫療</span>
+            <span class="project-category">團隊專案 · AI × 資安 × 智慧醫療</span>
             <span class="project-id">PROJECT_01</span>
           </div>
 
           <h3 class="project-title">ARKAI ｜ 照護方舟</h3>
-          <p class="project-lead">
-            以醫療隱私保護為核心設計概念，打造結合「邊緣端機敏資料去識別化」與「雲端 AI 輔助分析」之照護記錄處理系統。
-          </p>
+          
+          <div class="project-block">
+            <h4 class="block-title">📌 專案目標與應用情境</h4>
+            <p class="project-lead">
+              以醫療隱私保護為核心設計概念，旨在輔助護理人員進行照護記錄之結構化分析。由於病歷含有患者姓名、身分證字號與病況等高度機敏個資，不可直接發送到外部公有雲；系統核心是在醫療院所本地端先完成敏感資料去識別化遮罩，再送往雲端 AI 進行輔助分析。
+            </p>
+          </div>
 
-          <div class="project-details">
-            <div class="detail-item">
-              <span class="detail-icon">🛡️</span>
-              <div>
-                <strong>機敏資訊去識別化：</strong>
-                <span>設計本地端去識別化流程，確保患者個資與敏感病歷在離開院所內網前已被完全置換與遮罩。</span>
+          <div class="project-block">
+            <h4 class="block-title">👤 個人實際負責工作 <span class="team-note">(團隊協同開發，專責以下模組)</span></h4>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="detail-icon">🛡️</span>
+                <div>
+                  <strong>本地端機敏資訊去識別化：</strong>
+                  <span>設計並實作本地端資料去識別化遮罩邏輯，確保病患個資在離開院所內網前已完成關鍵特徵替換與脫敏。</span>
+                </div>
               </div>
-            </div>
-            <div class="detail-item">
-              <span class="detail-icon">⚡</span>
-              <div>
-                <strong>FastAPI & AI 服務鏈串接：</strong>
-                <span>參與後端 API 與護理紀錄 AI 分析流程之介接，確保資料交換格式與例外處理健全。</span>
+              <div class="detail-item">
+                <span class="detail-icon">🔍</span>
+                <div>
+                  <strong>資料送出前檢核機制：</strong>
+                  <span>實作多層資料檢核規則，驗證去識別化完整度，防止未處理的機敏欄位意外流出。</span>
+                </div>
               </div>
-            </div>
-            <div class="detail-item">
-              <span class="detail-icon">🐳</span>
-              <div>
-                <strong>容器化部署與排查：</strong>
-                <span>建置 Docker Compose 多容器環境（FastAPI + PostgreSQL + AI 微服務），排查網路互通與服務啟動依賴性。</span>
+              <div class="detail-item">
+                <span class="detail-icon">⚡</span>
+                <div>
+                  <strong>FastAPI 後端與 AI 服務鏈串接：</strong>
+                  <span>參與後端 API 開發與護理紀錄 AI 分析流程介接，設計健全的資料交換格式與異常重試流程。</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">🐳</span>
+                <div>
+                  <strong>Docker Compose 多容器部署與排查：</strong>
+                  <span>配置 FastAPI、PostgreSQL 與 AI 處理服務的多容器環境，排查網路通訊、環境變數與啟動依賴順序。</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="tech-stack-row">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">FastAPI</span>
-            <span class="tech-badge">Docker</span>
-            <span class="tech-badge">Docker Compose</span>
-            <span class="tech-badge">PostgreSQL</span>
-            <span class="tech-badge">Cloud AI</span>
-            <span class="tech-badge">Data Privacy</span>
+          <div class="project-block">
+            <h4 class="block-title">🔧 使用技術</h4>
+            <div class="tech-stack-row">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Docker Compose</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Cloud AI API</span>
+              <span class="tech-badge">去識別化實作 (Regex)</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h4 class="block-title">⚠️ 遇到的問題與處理方式</h4>
+            <div class="problem-solution-list">
+              <div class="ps-item">
+                <div class="ps-header">
+                  <span class="ps-badge issue">問題 1</span>
+                  <strong>Docker Compose 啟動時 FastAPI 服務過早連線資料庫導致連線失敗</strong>
+                </div>
+                <div class="ps-body">
+                  <span class="ps-badge fix">處理方式</span>
+                  <span>調整 Docker Compose 啟動相依設定，於 PostgreSQL 服務加入 healthcheck 健康檢查條件，並在 FastAPI 啟動腳本中實作資料庫連線重試等待（Retry Loop），確保資料庫真正就緒後才開始接受請求。</span>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-header">
+                  <span class="ps-badge issue">問題 2</span>
+                  <strong>非結構化照護文字去識別化時容易遺漏特徵或誤傷醫療專用術語</strong>
+                </div>
+                <div class="ps-body">
+                  <span class="ps-badge fix">處理方式</span>
+                  <span>建立多階段模式匹配與語法結構檢核規則，針對病患姓名、身分證號、日期與特定代碼進行獨立遮罩比對，並在送出前實施抽樣校驗，兼顧隱私防護與後續 AI 分析之語意完整性。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-links-bar">
+            <span class="project-resource-note">ℹ️ 專案涉及醫療團隊合作與相關規範，原始碼不公開；提供架構與去識別化流程說明。</span>
+            <a href="https://github.com/taiyuhuang591-lang" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>檢視個人 GitHub 專案庫 ↗</span>
+            </a>
           </div>
         </article>
 
@@ -231,46 +251,107 @@
         <article class="project-card glass-panel tilt-card">
           <div class="card-glow"></div>
           <div class="project-header">
-            <span class="project-category">Blue Team × 系統加固防護</span>
+            <span class="project-category">攻防演練 · 藍隊防禦 × 系統加固</span>
             <span class="project-id">PROJECT_02</span>
           </div>
 
-          <h3 class="project-title">Metis ｜ 校務門戶攻防演練</h3>
-          <p class="project-lead">
-            擔任藍隊（防守方）角色，針對校務系統目標環境進行全方位漏洞清查、權限收斂、IP 防護阻擋與加固驗證。
-          </p>
+          <h3 class="project-title">Metis ｜ 紅藍隊攻防演練</h3>
 
-          <div class="project-details">
-            <div class="detail-item">
-              <span class="detail-icon">🔍</span>
-              <div>
-                <strong>環境風險盤點與加固：</strong>
-                <span>深入檢測敏感設定檔（.env/config）、未授權目錄暴露及資料庫密碼硬編碼等高風險漏洞，實施權限收斂。</span>
+          <div class="project-block">
+            <h4 class="block-title">📌 專案目標與應用情境</h4>
+            <p class="project-lead">
+              擔任藍隊（防守方）角色，針對演練目標 VM 環境進行全方位漏洞清查、權限收斂、IP 防護阻擋與加固驗證。在攻防實戰情境中快速縮小攻擊面，確保核心後端服務維持可用性。
+            </p>
+          </div>
+
+          <div class="project-block">
+            <h4 class="block-title">👤 個人實際負責工作</h4>
+            <div class="project-details">
+              <div class="detail-item">
+                <span class="detail-icon">🖥️</span>
+                <div>
+                  <strong>目標 VM 環境建置與服務整合：</strong>
+                  <span>在 Linux (Ubuntu) 環境中建置目標服務，配置後端應用與反向代理，設定基本運行相依環境。</span>
+                </div>
               </div>
-            </div>
-            <div class="detail-item">
-              <span class="detail-icon">🧱</span>
-              <div>
-                <strong>威脅監控與 IP 阻擋機制：</strong>
-                <span>分析異常流量特徵與存取日誌，實作惡意 IP 監控及阻擋策略，防止目錄爆破與惡意探測。</span>
+              <div class="detail-item">
+                <span class="detail-icon">🔍</span>
+                <div>
+                  <strong>敏感設定與目錄暴露盤點：</strong>
+                  <span>檢測並封閉未妥善保護的 `.env` 設定檔、未授權存取目錄與容器管理端點，收斂多餘開放連接埠。</span>
+                </div>
               </div>
-            </div>
-            <div class="detail-item">
-              <span class="detail-icon">🔄</span>
-              <div>
-                <strong>容災備份與 VM 服務驗證：</strong>
-                <span>建立備份排程與復原驗證流程，針對容器暴露端點進行封閉，降低主機攻擊面（Attack Surface）。</span>
+              <div class="detail-item">
+                <span class="detail-icon">🧱</span>
+                <div>
+                  <strong>存取日誌監控與惡意 IP 阻擋：</strong>
+                  <span>實時分析 Nginx 與系統存取日誌特徵，撰寫防火牆阻擋規則（iptables / UFW）阻絕惡意探測來源。</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">🔄</span>
+                <div>
+                  <strong>資料庫備份自動化與復原演練：</strong>
+                  <span>編寫自動化 Bash 腳本執行資料庫 Dump 與檔案備份，並進行乾淨環境災難復原驗證。</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="tech-stack-row">
-            <span class="tech-badge">Linux / Ubuntu</span>
-            <span class="tech-badge">Docker Security</span>
-            <span class="tech-badge">System Hardening</span>
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Access Control</span>
-            <span class="tech-badge">Log Analysis</span>
+          <div class="project-block">
+            <h4 class="block-title">🔧 使用技術</h4>
+            <div class="tech-stack-row">
+              <span class="tech-badge">Linux / Ubuntu</span>
+              <span class="tech-badge">Docker Security</span>
+              <span class="tech-badge">System Hardening</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Bash Scripting</span>
+              <span class="tech-badge">iptables / UFW</span>
+              <span class="tech-badge">Log Analysis</span>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h4 class="block-title">🛡️ 問題、處理方式與驗證結果 (真實參與情境)</h4>
+            <div class="problem-solution-list">
+              <div class="ps-item">
+                <div class="ps-header">
+                  <span class="ps-badge issue">案例 1</span>
+                  <strong>敏感設定檔暴露與容器端點未授權存取</strong>
+                </div>
+                <div class="ps-body">
+                  <p><span class="ps-badge fix">處理方式</span> 於 Nginx 反向代理配置中加入規則封閉 `.env` 及敏感隱藏路徑，收斂容器 Port Mapping 僅綁定 localhost，並調整檔案權限至最小必要權限 (chmod 600)。</p>
+                  <p><span class="ps-badge verify">驗證結果</span> 透過外部網路工具進行路徑探測與掃描，確認該路徑均回傳 403 Forbidden 或 404 Not Found，外部無法直接讀取設定內容。</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-header">
+                  <span class="ps-badge issue">案例 2</span>
+                  <strong>密集字典爆破探測與異常請求流量</strong>
+                </div>
+                <div class="ps-body">
+                  <p><span class="ps-badge fix">處理方式</span> 即時分析 access.log 篩選高頻錯誤登入特徵，撰寫 UFW / iptables 規則直接封鎖攻擊來源 IP，並在反向代理加入速率限制（Rate Limiting）。</p>
+                  <p><span class="ps-badge verify">驗證結果</span> 封鎖後攻擊來源 IP 連線立即被 Drop，日誌中的異常錯誤請求迅速降為零，系統負載恢復穩定。</p>
+                </div>
+              </div>
+              <div class="ps-item">
+                <div class="ps-header">
+                  <span class="ps-badge issue">案例 3</span>
+                  <strong>資料庫勒索與竄改風險之災難復原準備</strong>
+                </div>
+                <div class="ps-body">
+                  <p><span class="ps-badge fix">處理方式</span> 撰寫定時自動化備份腳本，將資料庫導出並存放於具獨立權限的備份目錄，落實唯讀屬性隔離。</p>
+                  <p><span class="ps-badge verify">驗證結果</span> 在全新 VM 測試實例中執行還原腳本，確認資料庫結構與測試資料均能 100% 成功還原無缺漏。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-links-bar">
+            <span class="project-resource-note">ℹ️ 基於攻防演練保密原則，保留加固檢核清單與防禦架構，面試可詳細說明實作過程。</span>
+            <a href="https://github.com/taiyuhuang591-lang" target="_blank" rel="noopener noreferrer" class="resource-link">
+              <span>檢視個人 GitHub 專案庫 ↗</span>
+            </a>
           </div>
         </article>
       </div>
@@ -284,6 +365,13 @@
         <div class="sec-line"></div>
       </div>
 
+      <div class="skill-level-legend">
+        <span class="legend-title">程度標示說明：</span>
+        <span class="level-tag practiced">● 有實際操作經驗</span>
+        <span class="level-tag applied">▲ 專案中曾使用</span>
+        <span class="level-tag learning">◆ 正在學習 / 精進中</span>
+      </div>
+
       <div class="skills-quad">
         <!-- Skill 1 -->
         <div class="skill-group-card glass-panel">
@@ -295,12 +383,32 @@
             </div>
           </div>
           <p class="skill-desc">熟悉 Linux/Ubuntu 伺服器操作、權限劃分、Systemd 服務控管、排程與日誌（Journal/Syslog）除錯。</p>
-          <div class="skill-pills">
-            <span class="pill">Ubuntu / Debian</span>
-            <span class="pill">Bash Scripting</span>
-            <span class="pill">Nginx 基礎</span>
-            <span class="pill">日誌分析排錯</span>
-            <span class="pill">MIS 系統管理</span>
+          
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag practiced">有實際操作經驗</span></div>
+            <div class="skill-pills">
+              <span class="pill">Ubuntu / Debian 系統管理</span>
+              <span class="pill">Bash Scripting 自動化</span>
+              <span class="pill">Systemd 服務控管</span>
+              <span class="pill">日誌排查 (Journalctl / Syslog)</span>
+              <span class="pill">Linux 權限管理 (chmod/chown/sudo)</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag applied">專案中曾使用</span></div>
+            <div class="skill-pills">
+              <span class="pill">Nginx 反向代理配置</span>
+              <span class="pill">MIS 基礎維運管理</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag learning">正在學習</span></div>
+            <div class="skill-pills">
+              <span class="pill">進階 Linux 系統調優</span>
+              <span class="pill">Ansible 自動化配置</span>
+            </div>
           </div>
         </div>
 
@@ -309,17 +417,37 @@
           <div class="skill-group-header">
             <span class="skill-group-icon">⚡</span>
             <div>
-              <h3>後端開發與資料庫</h3>
+              <h3>後端開發與 API 設計</h3>
               <span class="skill-sub">Backend Engineering</span>
             </div>
           </div>
-          <p class="skill-desc">以 Python 為主軸，具備 FastAPI 框架開發 RESTful API 經驗，整合關聯式資料庫與快取機制。</p>
-          <div class="skill-pills">
-            <span class="pill">Python 3</span>
-            <span class="pill">FastAPI</span>
-            <span class="pill">RESTful API 設計</span>
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">Redis 快取觀念</span>
+          <p class="skill-desc">以 Python 為主軸，具備 FastAPI 框架開發 RESTful API 經驗，重視資料驗證與例外處理機制。</p>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag practiced">有實際操作經驗</span></div>
+            <div class="skill-pills">
+              <span class="pill">Python 3 開發</span>
+              <span class="pill">FastAPI 框架</span>
+              <span class="pill">RESTful API 設計</span>
+              <span class="pill">Pydantic 欄位驗證</span>
+              <span class="pill">異常捕捉與例外處理</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag applied">專案中曾使用</span></div>
+            <div class="skill-pills">
+              <span class="pill">PostgreSQL 關聯資料庫串接</span>
+              <span class="pill">連線池設定與基本查詢</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag learning">正在學習</span></div>
+            <div class="skill-pills">
+              <span class="pill">Redis 快取架構與防禦</span>
+              <span class="pill">非同步任務排程佇列</span>
+            </div>
           </div>
         </div>
 
@@ -333,12 +461,32 @@
             </div>
           </div>
           <p class="skill-desc">熟練使用 Docker 與 Docker Compose 封裝應用微服務，熟悉 Git 分支管理與 GitHub 開發工作流程。</p>
-          <div class="skill-pills">
-            <span class="pill">Docker</span>
-            <span class="pill">Docker Compose</span>
-            <span class="pill">Git / GitHub</span>
-            <span class="pill">多容器服務互通</span>
-            <span class="pill">環境隔離實務</span>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag practiced">有實際操作經驗</span></div>
+            <div class="skill-pills">
+              <span class="pill">Docker 容器操作</span>
+              <span class="pill">Docker Compose 多容器編排</span>
+              <span class="pill">容器相依與啟動問題排查</span>
+              <span class="pill">Git / GitHub 版本控制</span>
+              <span class="pill">分支管理與 PR 流程</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag applied">專案中曾使用</span></div>
+            <div class="skill-pills">
+              <span class="pill">Dockerfile 撰寫與封裝</span>
+              <span class="pill">容器網路隔離設定</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag learning">正在學習</span></div>
+            <div class="skill-pills">
+              <span class="pill">GitHub Actions CI/CD Pipeline</span>
+              <span class="pill">Kubernetes 基本觀念</span>
+            </div>
           </div>
         </div>
 
@@ -347,17 +495,37 @@
           <div class="skill-group-header">
             <span class="skill-group-icon">🛡️</span>
             <div>
-              <h3>資安防禦與雲端實踐</h3>
+              <h3>資安實作與雲端環境</h3>
               <span class="skill-sub">Security & Cloud</span>
             </div>
           </div>
           <p class="skill-desc">具備藍隊攻防思維，包含敏感資訊遮罩去識別化、存取控制、GCP VM 建置與安全稽核概念。</p>
-          <div class="skill-pills">
-            <span class="pill">藍隊防禦 (Blue Team)</span>
-            <span class="pill">資料去識別化</span>
-            <span class="pill">系統加固 (Hardening)</span>
-            <span class="pill">GCP Compute Engine</span>
-            <span class="pill">最小權限原則</span>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag practiced">有實際操作經驗</span></div>
+            <div class="skill-pills">
+              <span class="pill">本地機敏資訊遮罩去識別化</span>
+              <span class="pill">敏感設定檔 (.env) 盤點與防護</span>
+              <span class="pill">最小權限原則實踐</span>
+              <span class="pill">存取日誌分析與異常探測</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag applied">專案中曾使用</span></div>
+            <div class="skill-pills">
+              <span class="pill">藍隊防禦 (Blue Team 實戰)</span>
+              <span class="pill">iptables / UFW 惡意 IP 阻擋</span>
+              <span class="pill">GCP Compute Engine VM 建置</span>
+            </div>
+          </div>
+
+          <div class="skill-tier-block">
+            <div class="tier-label"><span class="level-tag learning">正在學習</span></div>
+            <div class="skill-pills">
+              <span class="pill">OWASP Top 10 防護深化</span>
+              <span class="pill">SIEM 日誌關聯分析工具</span>
+            </div>
           </div>
         </div>
       </div>
@@ -375,7 +543,7 @@
             <h4>國立臺中科技大學</h4>
             <p class="edu-dept">資訊工程系 ｜ 學士學位 (畢業)</p>
             <p class="edu-notes">
-              扎實修習計算機組織、資料結構、演算法、作業系統、計算機網路與資料庫系統等核心資工課程，並全心投入專案實踐。
+              扎實修習計算機組織、資料結構、演算法、作業系統、計算機網路與資料庫系統等核心資工課程，重視底層邏輯與系統原理，並將所學落實於專案與資安實戰。
             </p>
           </div>
         </div>
@@ -384,27 +552,27 @@
       <!-- Engineering Principles -->
       <div class="glass-panel info-box">
         <div class="box-tag">ENGINEERING MINDSET</div>
-        <h3 class="box-heading">⚙️ 工作哲學與態度</h3>
+        <h3 class="box-heading">⚙️ 工作哲學與求職態度</h3>
         <ul class="method-list">
           <li>
             <span class="method-num">01</span>
             <div>
               <strong>先釐清問題本質 (Root-Cause Focused)</strong>
-              <p>不盲目嘗試，先透過 Log、環境變數與連線狀態縮小疑點範圍。</p>
+              <p>不盲目嘗試，先透過 Log、環境變數與連線狀態縮小疑點範圍，落實診斷。</p>
             </div>
           </li>
           <li>
             <span class="method-num">02</span>
             <div>
               <strong>重視驗證與可復原性 (Verifiable & Safe)</strong>
-              <p>修改前後落實備份與單元驗證，確保任何異動均在控制之中。</p>
+              <p>修改前後落實備份與逐步驗證，確保任何異動均在控制與可復原範圍之中。</p>
             </div>
           </li>
           <li>
             <span class="method-num">03</span>
             <div>
-              <strong>持續沉澱與文檔化 (Process Standardization)</strong>
-              <p>樂於承擔系統基礎任務，將每次排錯整理為標準維運流程。</p>
+              <strong>務實誠信不浮誇 (Honest & Realistic)</strong>
+              <p>依據真實經驗呈現技能，對於尚在學習的技術保持謙遜求知，穩健提升團隊戰力。</p>
             </div>
           </li>
         </ul>
@@ -412,27 +580,30 @@
     </section>
 
     <!-- Contact & Footer Section -->
-    <footer class="cyber-footer glass-panel">
+    <footer id="contact" class="cyber-footer glass-panel">
       <div class="footer-cta">
         <div class="cta-pulse"></div>
         <div>
-          <h3>準備好為您的團隊注入可靠戰力</h3>
-          <p>積極尋求 <strong>資安工程師、後端工程師、MIS 系統工程師</strong> 等全職職缺。期待與您進一步交流！</p>
+          <h3>積極尋求求職機會 ｜ 注入可靠防禦與維運戰力</h3>
+          <p>求職方向：<strong>資安工程師 ｜ 後端工程師 ｜ MIS 工程師</strong>。期待與您進一步交流面談！</p>
         </div>
       </div>
 
       <div class="footer-links">
-        <a href="https://github.com/taiyuhuang591" target="_blank" rel="noopener noreferrer" class="footer-link-btn">
-          <span>GitHub: taiyuhuang591 ↗</span>
+        <a href="https://github.com/taiyuhuang591-lang" target="_blank" rel="noopener noreferrer" class="footer-link-btn">
+          <span>GitHub: taiyuhuang591-lang ↗</span>
         </a>
-        <button class="footer-link-btn" onclick="document.getElementById('copy-email-btn').click()">
-          <span>聯絡方式：taiyuhuang591@gmail.com</span>
+        <a href="mailto:taiyuhuang591@gmail.com" class="footer-link-btn">
+          <span>寄信至：taiyuhuang591@gmail.com ✉</span>
+        </a>
+        <button class="footer-link-btn" id="footer-copy-email-btn" data-email="taiyuhuang591@gmail.com" type="button">
+          <span>一鍵複製 Email 📋</span>
         </button>
       </div>
 
       <div class="footer-bottom-line">
-        <span>© 2026 黃泰喻 (Terry Huang) · All Systems Operational</span>
-        <span class="footer-sign">Designed with CyberSec Aesthetic</span>
+        <span>© 2026 黃泰喻 (Terry Huang) · 國立臺中科技大學 資訊工程系畢業</span>
+        <span class="footer-sign">務實求職 ｜ 資安防禦 · 後端開發 · 系統維運</span>
       </div>
     </footer>
   </div>
