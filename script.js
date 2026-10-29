@@ -65,10 +65,11 @@ function initTypewriter() {
   if (!textEl) return;
 
   const phrases = [
-    "資安防禦 · 後端開發 · Linux 系統維運。",
-    "重視排查根因，日誌分析與環境隔離驗證。",
-    "FastAPI × Docker 容器化微服務實作經驗。",
-    "藍隊實戰攻防 · 弱點加固與惡意 IP 阻擋。"
+    "求職方向：資安工程師 ｜ 後端工程師 ｜ MIS 工程師",
+    "國立臺中科技大學 資訊工程系畢業。",
+    "具備 Linux、Python、FastAPI 與 Docker 操作基礎。",
+    "參與過 ARKAI 照護系統與 Metis 攻防演練專案。",
+    "2026 年 4 月參加產業新尖兵計畫持續精進。"
   ];
 
   // Respect user preference for reduced motion
@@ -451,45 +452,48 @@ function initInteractiveTerminal() {
         appendLine(`
           <strong>[IDENTITY] 黃泰喻 (Terry Huang)</strong><br>
           - 學歷：國立臺中科技大學 資訊工程系畢業<br>
-          - 簡介：在學期間接觸 Python、Linux、Docker 等技術，曾參與 ARKAI 照護系統及 Metis 紅藍隊攻防演練，從專案中累積系統開發、環境建置與資安實作的經驗。<br>
-          - 求職方向：<span class="highlight-cyan">資安工程師 ｜ 後端工程師 ｜ MIS 工程師</span>
+          - 求職方向：<span class="highlight-cyan">資安工程師 ｜ 後端工程師 ｜ MIS 工程師</span><br>
+          - 經歷：在學期間接觸 Python、Linux、Docker 等技術，曾參與「ARKAI 照護系統」與「Metis 攻防演練」；2026 年 4 月參加產業新尖兵計畫持續學習 AI 應用及相關技術。<br>
+          - 特質：重視動手實作與排錯細節，持續學習並積極完成交付任務。
         `);
         break;
 
       case "skills":
         appendLine(`
-          <strong>[ARSENAL / 技術能力與程度分級]</strong><br>
+          <strong>[TECHNICAL SKILLS / 技術能力]</strong><br>
           <span style="color:#00ff66;">● [有實際操作經驗]</span><br>
-          &nbsp;&nbsp;• Linux (Ubuntu/Debian 系統維運、Systemd、Bash、權限劃分)<br>
-          &nbsp;&nbsp;• Python 3 後端開發、FastAPI 框架、RESTful API、Pydantic<br>
-          &nbsp;&nbsp;• Docker / Docker Compose 容器編排、服務網路互通排查<br>
-          &nbsp;&nbsp;• Git / GitHub 分支管理與版本協同<br>
-          &nbsp;&nbsp;• 本地敏感資料去識別化遮罩、日誌排查 (Journal/Syslog)<br>
+          &nbsp;&nbsp;• Python 3 基礎開發、FastAPI 框架、RESTful API 實作、Pydantic 欄位驗證<br>
+          &nbsp;&nbsp;• Linux (Ubuntu/Debian 系統操作、Systemd 服務操作、基礎 Bash、檔案權限管理)<br>
+          &nbsp;&nbsp;• Docker 容器操作、Docker Compose 環境配置、環境變數與網路排查<br>
+          &nbsp;&nbsp;• Git / GitHub 版本控管與協同作業<br>
+          &nbsp;&nbsp;• 本地敏感資料去識別化遮罩、系統存取日誌查核<br>
           <span style="color:var(--neon-primary);">▲ [專案中曾使用]</span><br>
-          &nbsp;&nbsp;• PostgreSQL 資料庫串接與連線池排查、Nginx 反向代理<br>
-          &nbsp;&nbsp;• 藍隊實戰防守、iptables/UFW 惡意 IP 阻擋、GCP VM 建置<br>
-          <span style="color:var(--neon-warning);">◆ [正在學習 / 持續精進]</span><br>
-          &nbsp;&nbsp;• Redis 快取架構、GitHub Actions CI/CD、SIEM 日誌關聯分析
+          &nbsp;&nbsp;• PostgreSQL 資料庫串接與基本查詢、Nginx 基礎反向代理<br>
+          &nbsp;&nbsp;• GCP Compute Engine VM 建置與網站部署、攻防演練藍隊防護整合<br>
+          <span style="color:var(--neon-warning);">◆ [正在學習 / 接觸中]</span><br>
+          &nbsp;&nbsp;• GCP Cloud Functions / Cloud Run 無伺服器概念、GitHub Actions CI/CD 基本概念
         `);
         break;
 
       case "cat projects":
       case "projects":
         appendLine(`
-          <div style="color:var(--neon-primary)">[PROJ_01] ARKAI 照護方舟 ｜ 智慧醫療去識別化</div>
-          - 團隊專案：醫療院所本地端個資去識別化遮罩，防範敏感資料外洩<br>
-          - 負責範疇：敏感特徵置換、送出前檢核、FastAPI/AI 串接、Docker Compose 部署排錯<br>
-          - 關鍵排查：解決容器連線資料庫相依順序 (healthcheck retry loop)<br><br>
-          <div style="color:var(--neon-primary)">[PROJ_02] Metis 紅藍隊攻防演練 ｜ 藍隊防守加固</div>
-          - 藍隊防守：Linux VM 目標環境建置、未授權目錄與敏感檔 (.env) 封閉<br>
-          - 實戰驗證：高頻探測 IP 阻擋 (iptables/UFW)、資料庫定時備份與災難復原演練
+          <div style="color:var(--neon-primary)">[PROJ_01] ARKAI 照護系統 (團隊專案)</div>
+          - 結合院內資料保護、去識別化與雲端 AI 應用的照護紀錄輔助專案。<br>
+          - 本人參與工作：本地端資料去識別化流程實作、送往雲端前之資料檢視過濾、護理紀錄 AI 分析展示串接、系統整合與 UAT 驗收測試。<br><br>
+          <div style="color:var(--neon-primary)">[PROJ_02] Metis 攻防演練 (校務系統防護)</div>
+          - 擔任藍隊成員，參與校園資訊系統環境防禦實作。<br>
+          - 本人參與工作：目標 Linux VM 環境建置、敏感目錄與設定檔暴露封閉、存取日誌查核與異常 IP 防火牆阻擋測試、定期備份腳本測試與還原驗證。
         `);
         break;
 
       case "education":
         appendLine(`
-          [DEGREE] 國立臺中科技大學 - 資訊工程系 (學士學位畢業)<br>
-          扎實課程：計算機組織、資料結構、演算法、作業系統、計算機網路、資料庫系統。
+          <strong>[ACADEMIC & TRAINING / 學歷與培育]</strong><br>
+          1. 國立臺中科技大學 - 資訊工程系 (學士畢業)<br>
+          &nbsp;&nbsp;• 核心課程：資料結構、演算法、作業系統、計算機網路、資料庫系統。<br>
+          2. 產業新尖兵計畫 (2026 年 4 月參訓)<br>
+          &nbsp;&nbsp;• 持續學習 AI 應用串接與現代軟體工程實務。
         `);
         break;
 
@@ -507,11 +511,11 @@ function initInteractiveTerminal() {
       case "hire":
         appendLine(`
           <span style="color:#00ff66; font-size:1.02rem; font-weight:700;">
-          🎉 [PERMISSION GRANTED] 感謝您的關注與肯定！
+          🎉 [PERMISSION GRANTED] 感謝您的關注！
           </span><br>
-          黃泰喻 (Terry Huang) 具備踏實的資安防護與後端維運戰力，積極尋求全職職缺：<br>
+          黃泰喻（Terry Huang）具備紮實的實作熱忱與學習態度，積極尋求全職職缺：<br>
           <strong>資安工程師 ｜ 後端工程師 ｜ MIS 工程師</strong><br>
-          歡迎來信聯繫：<a href="mailto:taiyuhuang591@gmail.com" style="color:var(--neon-warning); font-weight:bold;">taiyuhuang591@gmail.com</a>
+          歡迎來信交流：<a href="mailto:taiyuhuang591@gmail.com" style="color:var(--neon-warning); font-weight:bold;">taiyuhuang591@gmail.com</a>
         `);
         break;
 

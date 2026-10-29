@@ -166,6 +166,31 @@ body {
   font-weight: 600;
 }
 
+/* HUD Marquee Ticker */
+.hud-marquee-container {
+  overflow: hidden;
+  max-width: 680px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.hud-marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-code);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+.marquee-item.highlight {
+  color: var(--neon-primary);
+  font-weight: 600;
+}
+.marquee-sep {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}
+
 .hud-action-btn {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--line-color);
@@ -644,11 +669,15 @@ body {
   line-height: 1.4;
 }
 
-/* Sections HUD Headers */
-.cyber-section {
+/* Sections HUD Headers & Anchor Offset */
+.cyber-section,
+#projects,
+#skills,
+#contact {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  scroll-margin-top: 72px;
 }
 
 .section-hud-header {
@@ -1284,6 +1313,15 @@ input:focus-visible {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+  .cyber-section,
+  #projects,
+  #skills,
+  #contact {
+    scroll-margin-top: 58px;
+  }
+  .hud-marquee-container {
+    max-width: calc(100vw - 110px);
   }
 }
 
